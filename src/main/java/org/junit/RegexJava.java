@@ -59,6 +59,15 @@ public class RegexJava {
 
     }
 
+    public  boolean PasswordCheck3(String Password3) {
+        /*
+         * To define regex for password and matching email with the give expression
+         */
+        Pattern obj = Pattern.compile("\"[a-z]{6,}[A-Z]{1,}[0-9]{1,}\"");
+        return obj.matcher(Password3).matches();
+
+
+    }
 
 
 }
