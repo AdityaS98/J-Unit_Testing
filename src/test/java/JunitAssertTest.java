@@ -66,4 +66,19 @@ public class JunitAssertTest {
         Assert.assertTrue(result);
 
     }
+    @Test
+    public void When_Given_MultipleEmails_Is_Correct_ReturnTrue(){
+        RegexJava obj = new RegexJava();
+        boolean result = obj.multipleEmailValidation(" abc@yahoo.com,\n" +
+                " abc-100@yahoo.com,\n" +
+                " abc.100@yahoo.com\n" +
+                " abc111@abc.com,\n" +
+                " abc-100@abc.net,\n" +
+                " abc.100@abc.com.au\n" +
+                " abc@1.com,\n" +
+                " abc@gmail.com.com\n" +
+                " abc+100@gmail.com");
+        Assert.assertTrue(result);
+
+    }
 }

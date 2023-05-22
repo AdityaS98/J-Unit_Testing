@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class RegexJava {
 
-    public  boolean firstName(String firstName) {
+    public boolean firstName(String firstName) {
         /*
          * To define regex for first name and matching first name with the give expression for the first three letters
          */
@@ -19,7 +19,7 @@ public class RegexJava {
      * To define regex for last name and matching last name with the give expression for the first three letters
      */
 
-    public  boolean lastName(String lastName) {
+    public boolean lastName(String lastName) {
         /*
          * To define regex for first name and matching first name with the give expression for the first three letters
          */
@@ -29,7 +29,7 @@ public class RegexJava {
 
     }
 
-    public  boolean eMail(String Email) {
+    public boolean eMail(String Email) {
         /*
          * To define regex for email and matching email with the give expression
          */
@@ -39,7 +39,7 @@ public class RegexJava {
 
     }
 
-    public  boolean PasswordCheck1(String Password1) {
+    public boolean PasswordCheck1(String Password1) {
         /*
          * To define regex for password and matching email with the give expression
          */
@@ -49,7 +49,7 @@ public class RegexJava {
 
     }
 
-    public  boolean PasswordCheck2(String Password2) {
+    public boolean PasswordCheck2(String Password2) {
         /*
          * To define regex for password and matching email with the give expression
          */
@@ -59,7 +59,7 @@ public class RegexJava {
 
     }
 
-    public  boolean PasswordCheck3(String Password3) {
+    public boolean PasswordCheck3(String Password3) {
         /*
          * To define regex for password and matching email with the give expression
          */
@@ -69,7 +69,7 @@ public class RegexJava {
 
     }
 
-    public  boolean PasswordCheck4(String Password4) {
+    public boolean PasswordCheck4(String Password4) {
         /*
          * To define regex for password and matching email with the give expression
          */
@@ -79,7 +79,7 @@ public class RegexJava {
 
     }
 
-    public  boolean mobileNumberCheck(String Number) {
+    public boolean mobileNumberCheck(String Number) {
         /*
          * To define regex for password and matching email with the give expression
          */
@@ -89,4 +89,13 @@ public class RegexJava {
 
     }
 
+    public boolean multipleEmailValidation(String mail) {
+        /*
+         * To define regex for password and matching email with the give expression
+         */
+        Pattern obj = Pattern.compile("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$");
+        return obj.matcher(mail).matches();
+
+    }
 }
+
