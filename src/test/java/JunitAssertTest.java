@@ -59,4 +59,11 @@ public class JunitAssertTest {
 
     }
 
+    @Test
+    public void When_Given_MobileNumber_Is_Correct_ReturnTrue(){
+        RegexJava obj = new RegexJava();
+        boolean result = obj.mobileNumberCheck(" 91 9919819801");
+        Assert.assertTrue(result);
+
+    }
 }

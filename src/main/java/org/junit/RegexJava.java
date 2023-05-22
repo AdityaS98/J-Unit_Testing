@@ -79,4 +79,14 @@ public class RegexJava {
 
     }
 
+    public  boolean mobileNumberCheck(String Number) {
+        /*
+         * To define regex for password and matching email with the give expression
+         */
+        Pattern obj = Pattern.compile("[1-9]{1}[0-9]{1} [6-9]{1}[0-9]{9}");
+        return obj.matcher(Number).matches();
+
+
+    }
+
 }
