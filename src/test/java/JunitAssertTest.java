@@ -51,4 +51,12 @@ public class JunitAssertTest {
 
     }
 
+    @Test
+    public void When_Given_PassWord4_Is_Correct_ReturnTrue(){
+        RegexJava obj = new RegexJava();
+        boolean result = obj.PasswordCheck4("Adityashar1#");
+        Assert.assertTrue(result);
+
+    }
+
 }
