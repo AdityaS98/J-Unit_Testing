@@ -27,4 +27,12 @@ public class JunitAssertTest {
         boolean result = obj.eMail("abc.xyz@bl.co.in");
         Assert.assertTrue(result);
     }
+
+    @Test
+    public void When_Given_PassWord1_Is_Correct_ReturnTrue(){
+        RegexJava obj = new RegexJava();
+        boolean result = obj.PasswordCheck1("adityasharma");
+        Assert.assertTrue(result);
+
+    }
 }

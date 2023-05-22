@@ -39,4 +39,16 @@ public class RegexJava {
 
     }
 
+    public  boolean PasswordCheck1(String Password1) {
+        /*
+         * To define regex for password and matching email with the give expression
+         */
+        Pattern obj = Pattern.compile("[a-z]{8,}");
+        return obj.matcher(Password1).matches();
+
+
+    }
+
+
+
 }
